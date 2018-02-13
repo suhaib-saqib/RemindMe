@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nngo1.remindme">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <receiver android:name=".Event.CustomBroadcastReceiver"/>
+        <activity android:name=".Relation.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Relation.CreateRelationActivity" />
+        <activity android:name=".Event.CreateEventActivity" />
+        <activity android:name=".Relation.RetrieveAllRelationsActivity" />
+        <activity android:name=".Event.RetrieveAllEventsActivity" />
+        <activity android:name=".Relation.UpdateRelationActivity" />
+        <activity android:name=".Event.UpdateEventActivity" />
+        <activity android:name=".Task.RetrieveAllTasksActivity" />
+        <activity android:name=".Task.CreateTaskActivity" />
+        <activity android:name=".Task.UpdateTaskActivity" />
+        <activity android:name=".Account.RetrieveAllAccountsActivity" />
+        <activity android:name=".Account.UpdateAccountActivity" />
+        <activity android:name=".Account.CreateAccountActivity"></activity>
+    </application>
+
+</manifest>
